@@ -28,9 +28,8 @@ Hexadecimal2decimal<-function(data=c("#CC00FF","#FFB400")){
   }
   return(out)
 }           
-
+library(gplots)
 rgbHeatCol<-function(x,n=9,lcol="#FFFFFF"){
-  library(gplots)
   Hexadecimal2decimal(colorpanel(n,low = lcol,high =x ))
 }
 
