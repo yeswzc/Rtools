@@ -1,5 +1,3 @@
-Hexadecimal2decimal<-function(data=c("#CC00FF","#FFB400")){
-  #data a vector of hexadecimal colour names
   hex2dec<-function(h){
     x1<-c(0:9,letters[1:6])
     a<-substr(h,2,2)
@@ -11,6 +9,10 @@ Hexadecimal2decimal<-function(data=c("#CC00FF","#FFB400")){
     y=(aa-1)*16+bb-1
     return(y)
   }
+
+Hexadecimal2decimal<-function(data=c("#CC00FF","#FFB400")){
+  #data a vector of hexadecimal colour names
+
   out<-rep(NA,length(x))
   for(n in 1:length(data) ){
     x=data[n]
